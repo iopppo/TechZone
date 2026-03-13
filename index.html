@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Хайруллаев Элдор, 0014.4">
+    <title>TechZone | Главная</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Дополнительные стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Навигация (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-microchip me-2"></i>TechZone
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero секция с анимацией -->
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 hero-content animate__animated animate__fadeInLeft">
+                    <h1 class="display-4 fw-bold">Собери свой <span class="text-gradient">идеальный ПК</span></h1>
+                    <p class="lead my-4">Комплектующие от ведущих производителей. Профессиональная консультация. Гарантия качества.</p>
+                    <div class="hero-buttons">
+                        <a href="catalog.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-shopping-cart me-2"></i>В каталог
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-headset me-2"></i>Консультация
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-image animate__animated animate__fadeInRight">
+                    <img src="https://moon.kz/upload/medialibrary/f92/nzmim2vma4jl2905or9el3nxi2u0s6sh.jpg" alt="ПК компоненты" class="img-fluid floating">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Преимущества (Grid + Flex) -->
+    <section class="features py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Почему выбирают <span class="text-gradient">TechZone</span></h2>
+            <div class="features-grid">
+                <!-- Карточка 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка по всему городу за 2 часа</p>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Гарантия 3 года</h3>
+                    <p>На все комплектующие официальная гарантия</p>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>1000+ клиентов</h3>
+                    <p>Довольных покупателей по всему городу</p>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Сборка ПК</h3>
+                    <p>Профессиональная сборка с настройкой BIOS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары (Bootstrap Cards) -->
+    <section class="popular-products py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title">Популярные <span class="text-gradient">товары</span></h2>
+            <div class="row g-4">
+                <!-- Товар 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://hardprice.ru/images/g/product/3694/videokarta-nvidia-geforce-rtx-4070-ti-asus-12gb-rog-strix-rtx4070ti-o12g-gaming-1.jpg" class="card-img-top" alt="Видеокарта">
+                        <div class="card-body">
+                            <h5 class="card-title">RTX 4070 Ti</h5>
+                            <p class="card-text">12GB GDDR6X, DLSS 3</p>
+                            <div class="price">85 000 ₽</div>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://ir.ozone.ru/s3/multimedia-1-y/c1000/7095222574.jpg" class="card-img-top" alt="Процессор">
+                        <div class="card-body">
+                            <h5 class="card-title">Ryzen 7 7800X3D</h5>
+                            <p class="card-text">8 ядер, AM5, 3D V-Cache</p>
+                            <div class="price">32 000 ₽</div>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://hyperpc.ru/images/catalog/hardware/ssd/samsung/990_pro/samsung-990-pro.jpg" class="card-img-top" alt="SSD">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung 990 Pro</h5>
+                            <p class="card-text">2TB, NVMe M.2, 7450 MB/s</p>
+                            <div class="price">15 000 ₽</div>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card h-100">
+                        <img src="https://ir.ozone.ru/s3/multimedia-x/c1000/6488885181.jpg" class="card-img-top" alt="Оперативная память">
+                        <div class="card-body">
+                            <h5 class="card-title">DDR5 32GB</h5>
+                            <p class="card-text">Kingston Fury, 6000MHz</p>
+                            <div class="price">11 000 ₽</div>
+                            <a href="#" class="btn btn-primary w-100">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Баннер с анимацией -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6">Нужна помощь в выборе комплектующих?</h2>
+                    <p class="mb-0">Наши специалисты помогут собрать ПК под любой бюджет и задачи</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg pulse-button">
+                        <i class="fas fa-phone-alt me-2"></i>Получить консультацию
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5><i class="fas fa-microchip me-2"></i>TechZone</h5>
+                    <p>Лучший выбор комплектующих для вашего ПК</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Главная</a></li>
+                        <li><a href="catalog.html" class="text-white-50">Каталог</a></li>
+                        <li><a href="contact.html" class="text-white-50">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p><i class="fas fa-phone me-2"></i>+7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@techzone.ru</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 TechZone. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
